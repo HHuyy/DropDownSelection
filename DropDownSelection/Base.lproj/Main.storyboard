@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxa-9I-Ssh">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNe-BQ-BEp">
+                                <rect key="frame" x="30" y="60" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ArV-wo-iYz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Select Fruit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSelectFruit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OyY-rV-hKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97I-yY-7nr">
+                                <rect key="frame" x="30" y="193" width="315" height="40"/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h96-nn-BpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Select Gender">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSelectGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8TL-Fg-y4o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="97I-yY-7nr" secondAttribute="trailing" constant="30" id="Fei-X1-dvL"/>
+                            <constraint firstItem="pNe-BQ-BEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="K1q-Ra-XXM"/>
+                            <constraint firstItem="97I-yY-7nr" firstAttribute="top" secondItem="pNe-BQ-BEp" secondAttribute="bottom" constant="93" id="fpO-Xb-WuW"/>
+                            <constraint firstItem="97I-yY-7nr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gY2-b7-Mzb"/>
+                            <constraint firstItem="pNe-BQ-BEp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="hWd-Ed-cbg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pNe-BQ-BEp" secondAttribute="trailing" constant="30" id="vbA-Lu-gFD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSelectFruit" destination="pNe-BQ-BEp" id="pio-VT-Ctx"/>
+                        <outlet property="btnSelectGender" destination="97I-yY-7nr" id="3Rr-xF-UGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="134"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="bva-5T-uVi">
+            <objects>
+                <viewController id="nxa-9I-Ssh" customClass="ViewController2" customModule="DropDownSelection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFJ-YC-6kA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P9S-nB-Rrh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nxa-9I-Ssh" id="DKL-VO-baB"/>
+                                    <outlet property="delegate" destination="nxa-9I-Ssh" id="PEe-dB-bLx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="miF-P9-QYt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P9S-nB-Rrh" firstAttribute="leading" secondItem="miF-P9-QYt" secondAttribute="leading" id="NNU-Z1-yjN"/>
+                            <constraint firstItem="P9S-nB-Rrh" firstAttribute="top" secondItem="miF-P9-QYt" secondAttribute="top" id="XZu-VZ-oAr"/>
+                            <constraint firstItem="miF-P9-QYt" firstAttribute="trailing" secondItem="P9S-nB-Rrh" secondAttribute="trailing" id="rT6-XY-xQq"/>
+                            <constraint firstItem="P9S-nB-Rrh" firstAttribute="height" secondItem="oFJ-YC-6kA" secondAttribute="height" multiplier="0.6" id="wAG-65-9VY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="P9S-nB-Rrh" id="yoL-d1-5PS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Buw-mT-Xtq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

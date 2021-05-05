@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="265" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="DropDownSelection" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xC-Gk-Em1">
+                        <rect key="frame" x="47.5" y="33" width="240" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-V7-aJl">
+                                <rect key="frame" x="99" y="12" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-1l-CAO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="45"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rwn-f7-H0t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="2b0-Pt-7e8"/>
+                            <constraint firstItem="3cT-V7-aJl" firstAttribute="centerY" secondItem="5xC-Gk-Em1" secondAttribute="centerY" id="53W-Tx-7IF"/>
+                            <constraint firstAttribute="width" constant="240" id="EIV-Rd-gYU"/>
+                            <constraint firstAttribute="bottom" secondItem="ZAt-1l-CAO" secondAttribute="bottom" id="MhZ-yw-VSR"/>
+                            <constraint firstAttribute="trailing" secondItem="ZAt-1l-CAO" secondAttribute="trailing" id="QXF-VU-tFr"/>
+                            <constraint firstItem="3cT-V7-aJl" firstAttribute="centerX" secondItem="5xC-Gk-Em1" secondAttribute="centerX" id="UkF-u0-RzE"/>
+                            <constraint firstItem="ZAt-1l-CAO" firstAttribute="leading" secondItem="5xC-Gk-Em1" secondAttribute="leading" id="owt-JA-tnU"/>
+                            <constraint firstItem="ZAt-1l-CAO" firstAttribute="top" secondItem="5xC-Gk-Em1" secondAttribute="top" id="qo3-G8-ekJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.72156862749999995" green="0.72156862749999995" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="5xC-Gk-Em1" secondAttribute="trailing" constant="27.5" id="9rc-l3-6Jm"/>
+                    <constraint firstAttribute="bottom" secondItem="5xC-Gk-Em1" secondAttribute="bottom" constant="187" id="APS-2c-QFK"/>
+                    <constraint firstItem="5xC-Gk-Em1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="Czx-FC-Xb3"/>
+                    <constraint firstItem="5xC-Gk-Em1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="27.5" id="vpb-wR-elA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="3cT-V7-aJl" id="RSw-2w-nSZ"/>
+            </connections>
+            <point key="canvasLocation" x="151.44927536231884" y="194.53125"/>
+        </tableViewCell>
+    </objects>
+</document>
